@@ -3,17 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5B0D1682252F741D0061912F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D1681252F741D0061912F /* AppDelegate.swift */; };
 		5B0D1684252F741D0061912F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D1683252F741D0061912F /* SceneDelegate.swift */; };
-		5B0D1686252F741D0061912F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D1685252F741D0061912F /* ViewController.swift */; };
-		5B0D1689252F741D0061912F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D1687252F741D0061912F /* Main.storyboard */; };
+		5B0D1689252F741D0061912F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D1687252F741D0061912F /* Home.storyboard */; };
 		5B0D168B252F74240061912F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D168A252F74240061912F /* Assets.xcassets */; };
 		5B0D168E252F74240061912F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D168C252F74240061912F /* LaunchScreen.storyboard */; };
 		5B0D1699252F74250061912F /* ChefaaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D1698252F74250061912F /* ChefaaAppTests.swift */; };
+		5B0D16A5252F75F90061912F /* ChefaaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D16A4252F75F90061912F /* ChefaaService.swift */; };
+		5B0D16A9252F796B0061912F /* HomePageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D16A8252F796B0061912F /* HomePageResponse.swift */; };
+		5B0D16AB252F7A290061912F /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D16AA252F7A290061912F /* HomePage.swift */; };
+		5B0D16AD252F7AD90061912F /* SliderObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D16AC252F7AD90061912F /* SliderObject.swift */; };
+		5B0D16AF252F7BA00061912F /* SubCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D16AE252F7BA00061912F /* SubCategory.swift */; };
+		5B0D16B1252F7CC20061912F /* ChefaaStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D16B0252F7CC20061912F /* ChefaaStore.swift */; };
+		5B0D16B3252F82E20061912F /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D16B2252F82E20061912F /* Brand.swift */; };
+		5B0D16B5252F85760061912F /* Bestselling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D16B4252F85760061912F /* Bestselling.swift */; };
+		5B0D16B7252F901F0061912F /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D16B6252F901F0061912F /* Endpoint.swift */; };
+		5B0D16BA252F91320061912F /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D16B9252F91320061912F /* ServiceError.swift */; };
+		5B0D16BD252F9CEC0061912F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D16BC252F9CEC0061912F /* HomeViewController.swift */; };
+		5B0D16C0252F9FC70061912F /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D16BF252F9FC60061912F /* Language.swift */; };
+		5B0D16C3252FE8BC0061912F /* UISearchBar+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D16C2252FE8BB0061912F /* UISearchBar+Appearance.swift */; };
+		5B0D16C5252FF1C90061912F /* UIColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D16C4252FF1C90061912F /* UIColor+Custom.swift */; };
+		5B0D16C72530010C0061912F /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D16C62530010C0061912F /* HomeTableViewController.swift */; };
+		5B0D16CA25309E510061912F /* HomeTableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D16C925309E510061912F /* HomeTableViewViewModel.swift */; };
+		5B0D16CC2530A1BA0061912F /* SliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D16CB2530A1BA0061912F /* SliderViewModel.swift */; };
+		5B0D16D02530F7C20061912F /* HomeViewController+ImagesSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D16CF2530F7C20061912F /* HomeViewController+ImagesSlider.swift */; };
+		5B0D16D32530F96D0061912F /* HomeViewSetuping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D16D22530F96D0061912F /* HomeViewSetuping.swift */; };
+		6CCC7FC58F333C46C7F857A6 /* Pods_ChefaaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D3AB2B19189799FDCD62F7 /* Pods_ChefaaApp.framework */; };
+		E541340FABEE726E985B797D /* Pods_ChefaaAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C712173F438F1AAA41445FF1 /* Pods_ChefaaAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +47,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35A6456B565D0E918F82757E /* Pods-ChefaaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChefaaApp.release.xcconfig"; path = "Target Support Files/Pods-ChefaaApp/Pods-ChefaaApp.release.xcconfig"; sourceTree = "<group>"; };
+		3BEB8C08CD6DF7B0E8875C10 /* Pods-ChefaaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChefaaApp.debug.xcconfig"; path = "Target Support Files/Pods-ChefaaApp/Pods-ChefaaApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5B0D167E252F741D0061912F /* ChefaaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChefaaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B0D1681252F741D0061912F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B0D1683252F741D0061912F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5B0D1685252F741D0061912F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5B0D1688252F741D0061912F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B0D1688252F741D0061912F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		5B0D168A252F74240061912F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B0D168D252F74240061912F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B0D168F252F74240061912F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B0D1694252F74240061912F /* ChefaaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChefaaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B0D1698252F74250061912F /* ChefaaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefaaAppTests.swift; sourceTree = "<group>"; };
 		5B0D169A252F74250061912F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B0D16A4252F75F90061912F /* ChefaaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefaaService.swift; sourceTree = "<group>"; };
+		5B0D16A8252F796B0061912F /* HomePageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageResponse.swift; sourceTree = "<group>"; };
+		5B0D16AA252F7A290061912F /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		5B0D16AC252F7AD90061912F /* SliderObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderObject.swift; sourceTree = "<group>"; };
+		5B0D16AE252F7BA00061912F /* SubCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategory.swift; sourceTree = "<group>"; };
+		5B0D16B0252F7CC20061912F /* ChefaaStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefaaStore.swift; sourceTree = "<group>"; };
+		5B0D16B2252F82E20061912F /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
+		5B0D16B4252F85760061912F /* Bestselling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bestselling.swift; sourceTree = "<group>"; };
+		5B0D16B6252F901F0061912F /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		5B0D16B9252F91320061912F /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		5B0D16BC252F9CEC0061912F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5B0D16BF252F9FC60061912F /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		5B0D16C2252FE8BB0061912F /* UISearchBar+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Appearance.swift"; sourceTree = "<group>"; };
+		5B0D16C4252FF1C90061912F /* UIColor+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Custom.swift"; sourceTree = "<group>"; };
+		5B0D16C62530010C0061912F /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		5B0D16C925309E510061912F /* HomeTableViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewViewModel.swift; sourceTree = "<group>"; };
+		5B0D16CB2530A1BA0061912F /* SliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewModel.swift; sourceTree = "<group>"; };
+		5B0D16CF2530F7C20061912F /* HomeViewController+ImagesSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+ImagesSlider.swift"; sourceTree = "<group>"; };
+		5B0D16D22530F96D0061912F /* HomeViewSetuping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewSetuping.swift; sourceTree = "<group>"; };
+		98C884A485C1F62F8A16C3D0 /* Pods-ChefaaAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChefaaAppTests.release.xcconfig"; path = "Target Support Files/Pods-ChefaaAppTests/Pods-ChefaaAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		A0D3AB2B19189799FDCD62F7 /* Pods_ChefaaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChefaaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C712173F438F1AAA41445FF1 /* Pods_ChefaaAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChefaaAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC15A8DA42C4EB3BF41C1506 /* Pods-ChefaaAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChefaaAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ChefaaAppTests/Pods-ChefaaAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CCC7FC58F333C46C7F857A6 /* Pods_ChefaaApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E541340FABEE726E985B797D /* Pods_ChefaaAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +110,8 @@
 				5B0D1680252F741D0061912F /* ChefaaApp */,
 				5B0D1697252F74250061912F /* ChefaaAppTests */,
 				5B0D167F252F741D0061912F /* Products */,
+				9AB39F8DD0B7CC5473437C8E /* Pods */,
+				DF136B9228E68E7F6C23D7EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,10 +127,14 @@
 		5B0D1680252F741D0061912F /* ChefaaApp */ = {
 			isa = PBXGroup;
 			children = (
+				5B0D16C1252FE81F0061912F /* Extensions */,
+				5B0D16A7252F792C0061912F /* Models */,
+				5B0D16C825309DEC0061912F /* View Models */,
+				5B0D16A3252F75C40061912F /* Services */,
+				5B0D16BB252F9CB20061912F /* View Controller */,
 				5B0D1681252F741D0061912F /* AppDelegate.swift */,
 				5B0D1683252F741D0061912F /* SceneDelegate.swift */,
-				5B0D1685252F741D0061912F /* ViewController.swift */,
-				5B0D1687252F741D0061912F /* Main.storyboard */,
+				5B0D1687252F741D0061912F /* Home.storyboard */,
 				5B0D168A252F74240061912F /* Assets.xcassets */,
 				5B0D168C252F74240061912F /* LaunchScreen.storyboard */,
 				5B0D168F252F74240061912F /* Info.plist */,
@@ -99,6 +151,112 @@
 			path = ChefaaAppTests;
 			sourceTree = "<group>";
 		};
+		5B0D16A3252F75C40061912F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D16BE252F9F900061912F /* Language */,
+				5B0D16B8252F91160061912F /* Service Error */,
+				5B0D16A6252F76C50061912F /* Protocols */,
+				5B0D16B0252F7CC20061912F /* ChefaaStore.swift */,
+				5B0D16B6252F901F0061912F /* Endpoint.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5B0D16A6252F76C50061912F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D16A4252F75F90061912F /* ChefaaService.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5B0D16A7252F792C0061912F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D16A8252F796B0061912F /* HomePageResponse.swift */,
+				5B0D16AA252F7A290061912F /* HomePage.swift */,
+				5B0D16AC252F7AD90061912F /* SliderObject.swift */,
+				5B0D16AE252F7BA00061912F /* SubCategory.swift */,
+				5B0D16B2252F82E20061912F /* Brand.swift */,
+				5B0D16B4252F85760061912F /* Bestselling.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B0D16B8252F91160061912F /* Service Error */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D16B9252F91320061912F /* ServiceError.swift */,
+			);
+			path = "Service Error";
+			sourceTree = "<group>";
+		};
+		5B0D16BB252F9CB20061912F /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D16D12530F8870061912F /* Protocol */,
+				5B0D16BC252F9CEC0061912F /* HomeViewController.swift */,
+				5B0D16C62530010C0061912F /* HomeTableViewController.swift */,
+				5B0D16CF2530F7C20061912F /* HomeViewController+ImagesSlider.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		5B0D16BE252F9F900061912F /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D16BF252F9FC60061912F /* Language.swift */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		5B0D16C1252FE81F0061912F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D16C2252FE8BB0061912F /* UISearchBar+Appearance.swift */,
+				5B0D16C4252FF1C90061912F /* UIColor+Custom.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5B0D16C825309DEC0061912F /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D16C925309E510061912F /* HomeTableViewViewModel.swift */,
+				5B0D16CB2530A1BA0061912F /* SliderViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		5B0D16D12530F8870061912F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D16D22530F96D0061912F /* HomeViewSetuping.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9AB39F8DD0B7CC5473437C8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BEB8C08CD6DF7B0E8875C10 /* Pods-ChefaaApp.debug.xcconfig */,
+				35A6456B565D0E918F82757E /* Pods-ChefaaApp.release.xcconfig */,
+				DC15A8DA42C4EB3BF41C1506 /* Pods-ChefaaAppTests.debug.xcconfig */,
+				98C884A485C1F62F8A16C3D0 /* Pods-ChefaaAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF136B9228E68E7F6C23D7EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0D3AB2B19189799FDCD62F7 /* Pods_ChefaaApp.framework */,
+				C712173F438F1AAA41445FF1 /* Pods_ChefaaAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +264,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B0D169D252F74250061912F /* Build configuration list for PBXNativeTarget "ChefaaApp" */;
 			buildPhases = (
+				24AA859D7C5A753B20F506F4 /* [CP] Check Pods Manifest.lock */,
 				5B0D167A252F741D0061912F /* Sources */,
 				5B0D167B252F741D0061912F /* Frameworks */,
 				5B0D167C252F741D0061912F /* Resources */,
+				99E8D93F7085D5D43681E5EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +283,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B0D16A0252F74250061912F /* Build configuration list for PBXNativeTarget "ChefaaAppTests" */;
 			buildPhases = (
+				4996DD0942D38923370330A5 /* [CP] Check Pods Manifest.lock */,
 				5B0D1690252F74240061912F /* Sources */,
 				5B0D1691252F74240061912F /* Frameworks */,
 				5B0D1692252F74240061912F /* Resources */,
@@ -182,7 +343,7 @@
 			files = (
 				5B0D168E252F74240061912F /* LaunchScreen.storyboard in Resources */,
 				5B0D168B252F74240061912F /* Assets.xcassets in Resources */,
-				5B0D1689252F741D0061912F /* Main.storyboard in Resources */,
+				5B0D1689252F741D0061912F /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,14 +356,96 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24AA859D7C5A753B20F506F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChefaaApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4996DD0942D38923370330A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChefaaAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99E8D93F7085D5D43681E5EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChefaaApp/Pods-ChefaaApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChefaaApp/Pods-ChefaaApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChefaaApp/Pods-ChefaaApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5B0D167A252F741D0061912F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B0D1686252F741D0061912F /* ViewController.swift in Sources */,
+				5B0D16A9252F796B0061912F /* HomePageResponse.swift in Sources */,
+				5B0D16B5252F85760061912F /* Bestselling.swift in Sources */,
+				5B0D16C5252FF1C90061912F /* UIColor+Custom.swift in Sources */,
+				5B0D16AF252F7BA00061912F /* SubCategory.swift in Sources */,
+				5B0D16C0252F9FC70061912F /* Language.swift in Sources */,
+				5B0D16AB252F7A290061912F /* HomePage.swift in Sources */,
+				5B0D16B3252F82E20061912F /* Brand.swift in Sources */,
+				5B0D16BD252F9CEC0061912F /* HomeViewController.swift in Sources */,
+				5B0D16D02530F7C20061912F /* HomeViewController+ImagesSlider.swift in Sources */,
+				5B0D16AD252F7AD90061912F /* SliderObject.swift in Sources */,
+				5B0D16CA25309E510061912F /* HomeTableViewViewModel.swift in Sources */,
 				5B0D1682252F741D0061912F /* AppDelegate.swift in Sources */,
+				5B0D16C3252FE8BC0061912F /* UISearchBar+Appearance.swift in Sources */,
+				5B0D16BA252F91320061912F /* ServiceError.swift in Sources */,
+				5B0D16C72530010C0061912F /* HomeTableViewController.swift in Sources */,
+				5B0D16B1252F7CC20061912F /* ChefaaStore.swift in Sources */,
+				5B0D16D32530F96D0061912F /* HomeViewSetuping.swift in Sources */,
 				5B0D1684252F741D0061912F /* SceneDelegate.swift in Sources */,
+				5B0D16B7252F901F0061912F /* Endpoint.swift in Sources */,
+				5B0D16A5252F75F90061912F /* ChefaaService.swift in Sources */,
+				5B0D16CC2530A1BA0061912F /* SliderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,12 +468,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5B0D1687252F741D0061912F /* Main.storyboard */ = {
+		5B0D1687252F741D0061912F /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5B0D1688252F741D0061912F /* Base */,
 			);
-			name = Main.storyboard;
+			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 		5B0D168C252F74240061912F /* LaunchScreen.storyboard */ = {
@@ -360,6 +603,7 @@
 		};
 		5B0D169E252F74250061912F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BEB8C08CD6DF7B0E8875C10 /* Pods-ChefaaApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +622,7 @@
 		};
 		5B0D169F252F74250061912F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35A6456B565D0E918F82757E /* Pods-ChefaaApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +641,7 @@
 		};
 		5B0D16A1252F74250061912F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC15A8DA42C4EB3BF41C1506 /* Pods-ChefaaAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +664,7 @@
 		};
 		5B0D16A2252F74250061912F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C884A485C1F62F8A16C3D0 /* Pods-ChefaaAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

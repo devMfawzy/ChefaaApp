@@ -71,5 +71,14 @@ class HomeTableViewViewModel {
         let headlineText = "All Categories"
         return HomePageSectionViewModel(sectionItems: subCategories, headlineText: headlineText)
     }
+    
+    var brandsViewModel: HomePageSectionViewModel? {
+        guard let homePage = homePageSubject.value else {
+            return nil
+        }
+        let brands = homePage.brands
+        let headlineText = "Brands"
+        return HomePageSectionViewModel(sectionItems: brands, headlineText: headlineText)
+    }
 
 }

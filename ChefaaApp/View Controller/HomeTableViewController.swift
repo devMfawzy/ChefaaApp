@@ -6,6 +6,7 @@ class HomeTableViewController: UITableViewController {
     @IBOutlet weak var imagesSliderCell: ImagesSliderCell!
     @IBOutlet weak var landingPagesCell: LandingCell!
     @IBOutlet weak var categoriesCell: CategoriesCollectionViewCell!
+    @IBOutlet weak var brandsCell: LandingCell!
     
     var homeTableViewViewModel: HomeTableViewViewModel?
     private let disposeBag = DisposeBag()
@@ -25,6 +26,9 @@ class HomeTableViewController: UITableViewController {
             }
             if let categoriesViewModel = viewModel.categoriesViewModel {
                 self?.categoriesCell.configure(viewModel: categoriesViewModel)
+            }
+            if let brandsViewModel = viewModel.brandsViewModel {
+                self?.brandsCell.configure(viewModel: brandsViewModel)
             }
         }).disposed(by: disposeBag)
     }

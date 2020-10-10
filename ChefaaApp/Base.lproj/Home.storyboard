@@ -260,7 +260,93 @@
                                 </cells>
                             </tableViewSection>
                             <tableViewSection id="8Ee-TX-b7I">
-                                <cells/>
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="148" id="KTG-ke-AEn" userLabel="Home Page Item Cell" customClass="BrandsCell" customModule="ChefaaApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="841" width="414" height="148"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KTG-ke-AEn" id="VoR-u7-eeE">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="148"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1" verticalCompressionResistancePriority="1000" text="Heading Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBn-fi-JNZ">
+                                                    <rect key="frame" x="16" y="8" width="302.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3La-Vq-tS3">
+                                                    <rect key="frame" x="16" y="44.5" width="382" height="95.5"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="p5t-hc-tlU">
+                                                        <size key="itemSize" width="128" height="128"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImagesCollectionViewCell" id="NcL-Yy-rqV" customClass="ImagesCollectionViewCell" customModule="ChefaaApp" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="-16.5" width="128" height="128"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="sC2-3k-Y4j" customClass="DesignableView" customModule="ChefaaApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dXi-5t-wXO">
+                                                                        <rect key="frame" x="6" y="6" width="116" height="116"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="dXi-5t-wXO" firstAttribute="top" secondItem="sC2-3k-Y4j" secondAttribute="top" constant="6" id="0uX-FV-rtQ"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="dXi-5t-wXO" secondAttribute="bottom" constant="6" id="BXa-qf-5OM"/>
+                                                                    <constraint firstItem="dXi-5t-wXO" firstAttribute="leading" secondItem="sC2-3k-Y4j" secondAttribute="leading" constant="6" id="G3T-fn-l3J"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="dXi-5t-wXO" secondAttribute="trailing" constant="6" id="KqO-nS-DVB"/>
+                                                                </constraints>
+                                                            </collectionViewCellContentView>
+                                                            <connections>
+                                                                <outlet property="itemImageView" destination="dXi-5t-wXO" id="bBY-65-ZKQ"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0JL-aM-JDf">
+                                                    <rect key="frame" x="388" y="12.5" width="10" height="12"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="10" id="3VB-Lc-4bd"/>
+                                                        <constraint firstAttribute="height" constant="12" id="9TL-NN-6hP"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                    <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                    <state key="normal" image="chevron.right" catalog="system">
+                                                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Show All" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ve-k7-ln5" userLabel="more label">
+                                                    <rect key="frame" x="326.5" y="10" width="55.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3La-Vq-tS3" firstAttribute="trailing" secondItem="VoR-u7-eeE" secondAttribute="trailing" constant="-16" id="2Tx-SU-4YQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="3La-Vq-tS3" secondAttribute="bottom" constant="8" id="3LB-AN-0rZ"/>
+                                                <constraint firstItem="4Ve-k7-ln5" firstAttribute="centerY" secondItem="HBn-fi-JNZ" secondAttribute="centerY" id="Asr-Hh-Tu5"/>
+                                                <constraint firstItem="4Ve-k7-ln5" firstAttribute="trailing" secondItem="0JL-aM-JDf" secondAttribute="leading" constant="-6" id="Mpq-7w-lUJ"/>
+                                                <constraint firstItem="HBn-fi-JNZ" firstAttribute="top" secondItem="VoR-u7-eeE" secondAttribute="top" constant="8" id="NQw-gv-azq"/>
+                                                <constraint firstAttribute="trailing" secondItem="0JL-aM-JDf" secondAttribute="trailing" constant="16" id="Nzt-9w-eGg"/>
+                                                <constraint firstItem="3La-Vq-tS3" firstAttribute="top" secondItem="HBn-fi-JNZ" secondAttribute="bottom" constant="16" id="amC-JF-0g7"/>
+                                                <constraint firstItem="4Ve-k7-ln5" firstAttribute="leading" secondItem="HBn-fi-JNZ" secondAttribute="trailing" constant="8" id="gAK-6x-kAe"/>
+                                                <constraint firstItem="3La-Vq-tS3" firstAttribute="leading" secondItem="HBn-fi-JNZ" secondAttribute="leading" id="lxe-Cv-Za8"/>
+                                                <constraint firstItem="HBn-fi-JNZ" firstAttribute="leading" secondItem="VoR-u7-eeE" secondAttribute="leading" constant="16" id="sLj-CJ-mF5"/>
+                                                <constraint firstItem="0JL-aM-JDf" firstAttribute="centerY" secondItem="4Ve-k7-ln5" secondAttribute="centerY" id="uwi-Mf-gqy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="3La-Vq-tS3" id="uHN-cJ-Fql"/>
+                                            <outlet property="headlineLabel" destination="HBn-fi-JNZ" id="Zgs-9N-pRy"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
                             </tableViewSection>
                             <tableViewSection id="TZH-28-PTh">
                                 <cells/>
@@ -273,6 +359,7 @@
                     </tableView>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
+                        <outlet property="brandsCell" destination="KTG-ke-AEn" id="wJp-p6-vFd"/>
                         <outlet property="categoriesCell" destination="mP5-8Z-KHV" id="Pc2-MO-uzQ"/>
                         <outlet property="imagesSliderCell" destination="QDI-p5-FX0" id="V7y-yE-1pp"/>
                         <outlet property="landingPagesCell" destination="voW-7S-PTF" id="jYK-PH-fMJ"/>
@@ -304,6 +391,7 @@
     </scenes>
     <resources>
         <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="person" catalog="system" width="128" height="117"/>
     </resources>
 </document>

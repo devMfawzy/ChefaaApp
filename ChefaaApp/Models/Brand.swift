@@ -12,3 +12,11 @@ struct Brand: Decodable {
     let images: [String]?
     let title: String
 }
+
+extension Brand: SectionItemPresentable {
+    
+    var image: String? {
+        return images?.first
+    }
+    
+}

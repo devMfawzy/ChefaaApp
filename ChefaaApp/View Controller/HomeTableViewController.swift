@@ -1,10 +1,11 @@
 import UIKit
-import ImageSlideshow
 import RxSwift
 
-class HomeTableViewController: UITableViewController, HomeViewSetuping {
+class HomeTableViewController: UITableViewController {
 
-    @IBOutlet weak var imageSlideshow: ImageSlideshow!
+    @IBOutlet weak var imagesSliderCell: ImagesSliderCell!
+    @IBOutlet weak var landingPagesCell: LandingCell!
+    @IBOutlet weak var categoriesCell: CategoriesCollectionViewCell!
     
     var homeTableViewViewModel: HomeTableViewViewModel?
     private let disposeBag = DisposeBag()
@@ -16,11 +17,16 @@ class HomeTableViewController: UITableViewController, HomeViewSetuping {
             return
         }
         viewModel.homePage.drive(onNext: { [weak self] (_) in
-            if let inputSources = viewModel.sliderViewModel?.inputSources {
-                self?.imageSlideshow.setImageInputs(inputSources)
+            if let sliderViewModel = viewModel.sliderViewModel {
+                self?.imagesSliderCell.configure(viewModel: sliderViewModel)
+            }
+            if let landingPageViewModel = viewModel.landingPageViewModel {
+                self?.landingPagesCell.configure(viewModel: landingPageViewModel)
+            }
+            if let categoriesViewModel = viewModel.categoriesViewModel {
+                self?.categoriesCell.configure(viewModel: categoriesViewModel)
             }
         }).disposed(by: disposeBag)
-        setupImageSlideshow(imageSlideshow: imageSlideshow)
     }
 
 }

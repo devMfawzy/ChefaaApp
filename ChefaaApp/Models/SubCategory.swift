@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct SubCategory: Decodable {
-    let title: String
-    let image: String
+struct SubCategory: Decodable, SectionItemPresentable {
+    var image: String?
+    var title: String?
 }

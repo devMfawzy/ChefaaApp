@@ -53,5 +53,23 @@ class HomeTableViewViewModel {
         }
         return SliderViewModel(sliderObjects: slider)
     }
+    
+    var landingPageViewModel: HomePageSectionViewModel? {
+        guard let homePage = homePageSubject.value else {
+            return nil
+        }
+        let landingPages = homePage.landingPages
+        let landingPageTitle = homePage.landingPageTitle
+        return HomePageSectionViewModel(sectionItems: landingPages, headlineText: landingPageTitle ?? "")
+    }
+    
+    var categoriesViewModel: HomePageSectionViewModel? {
+        guard let homePage = homePageSubject.value else {
+            return nil
+        }
+        let subCategories = homePage.subCategories
+        let headlineText = "All Categories"
+        return HomePageSectionViewModel(sectionItems: subCategories, headlineText: headlineText)
+    }
 
 }

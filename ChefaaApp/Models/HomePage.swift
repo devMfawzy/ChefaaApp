@@ -13,4 +13,6 @@ struct HomePage: Decodable {
     let subCategories: [SubCategory]
     let brands: [Brand]
     let bestselling: [Bestselling]
+    let landingPages: [LandingPage]
+    let landingPageTitle: String?
 }

@@ -20,8 +20,8 @@ struct SliderViewModel {
         return sliderObjects.map() { "\(ChefaaStore.baseURL)/\($0.image)" }
     }
     
-    var inputSources: [InputSource]? {
-        sliderImagesURLs.map() { KingfisherSource(urlString: $0) } as? [InputSource]
+    var inputSources: [InputSource] {
+        sliderImagesURLs.compactMap() { KingfisherSource(urlString: $0) }
     }
     
 }

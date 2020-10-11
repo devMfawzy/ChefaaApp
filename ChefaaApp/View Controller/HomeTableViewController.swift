@@ -1,5 +1,4 @@
 import UIKit
-import RxSwift
 
 class HomeTableViewController: UITableViewController {
 
@@ -9,32 +8,22 @@ class HomeTableViewController: UITableViewController {
     @IBOutlet weak var brandsCell: LandingCell!
     @IBOutlet weak var bestSellingCell: BestSellingCell!
     
-    var homeTableViewViewModel: HomeTableViewViewModel?
-    private let disposeBag = DisposeBag()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.homeTableViewViewModel = HomeTableViewViewModel(chefaaService: ChefaaStore.shared)
-        guard let viewModel = self.homeTableViewViewModel else {
-            return
+    func setupView(homeTableViewViewModel: HomeTableViewViewModel) {
+        if let sliderViewModel = homeTableViewViewModel.sliderViewModel {
+            self.imagesSliderCell.configure(viewModel: sliderViewModel)
         }
-        viewModel.homePage.drive(onNext: { [weak self] (_) in
-            if let sliderViewModel = viewModel.sliderViewModel {
-                self?.imagesSliderCell.configure(viewModel: sliderViewModel)
-            }
-            if let landingPageViewModel = viewModel.landingPageViewModel {
-                self?.landingPagesCell.configure(viewModel: landingPageViewModel)
-            }
-            if let categoriesViewModel = viewModel.categoriesViewModel {
-                self?.categoriesCell.configure(viewModel: categoriesViewModel)
-            }
-            if let brandsViewModel = viewModel.brandsViewModel {
-                self?.brandsCell.configure(viewModel: brandsViewModel)
-            }
-            if let bestSellingViewModel = viewModel.bestSellingViewModel {
-                self?.bestSellingCell.configure(viewModel: bestSellingViewModel)
-            }
-        }).disposed(by: disposeBag)
+        if let landingPageViewModel = homeTableViewViewModel.landingPageViewModel {
+            self.landingPagesCell.configure(viewModel: landingPageViewModel)
+        }
+        if let categoriesViewModel = homeTableViewViewModel.categoriesViewModel {
+            self.categoriesCell.configure(viewModel: categoriesViewModel)
+        }
+        if let brandsViewModel = homeTableViewViewModel.brandsViewModel {
+            self.brandsCell.configure(viewModel: brandsViewModel)
+        }
+        if let bestSellingViewModel = homeTableViewViewModel.bestSellingViewModel {
+            self.bestSellingCell.configure(viewModel: bestSellingViewModel)
+        }
     }
 
 }

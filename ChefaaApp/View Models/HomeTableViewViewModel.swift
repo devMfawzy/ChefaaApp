@@ -80,5 +80,14 @@ class HomeTableViewViewModel {
         let headlineText = "Brands"
         return HomePageSectionViewModel(sectionItems: brands, headlineText: headlineText)
     }
+    
+    var bestSellingViewModel: HomePageSectionViewModel? {
+        guard let homePage = homePageSubject.value else {
+            return nil
+        }
+        let bestSellingViewModel = homePage.bestselling.map() { BestSellingViewModel(bestSelling: $0) }
+        let headlineText = "Best Selling"
+        return HomePageSectionViewModel(sectionItems: bestSellingViewModel, headlineText: headlineText)
+    }
 
 }

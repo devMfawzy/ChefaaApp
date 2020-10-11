@@ -7,6 +7,7 @@ class HomeTableViewController: UITableViewController {
     @IBOutlet weak var landingPagesCell: LandingCell!
     @IBOutlet weak var categoriesCell: CategoriesCollectionViewCell!
     @IBOutlet weak var brandsCell: LandingCell!
+    @IBOutlet weak var bestSellingCell: BestSellingCell!
     
     var homeTableViewViewModel: HomeTableViewViewModel?
     private let disposeBag = DisposeBag()
@@ -29,6 +30,9 @@ class HomeTableViewController: UITableViewController {
             }
             if let brandsViewModel = viewModel.brandsViewModel {
                 self?.brandsCell.configure(viewModel: brandsViewModel)
+            }
+            if let bestSellingViewModel = viewModel.bestSellingViewModel {
+                self?.bestSellingCell.configure(viewModel: bestSellingViewModel)
             }
         }).disposed(by: disposeBag)
     }

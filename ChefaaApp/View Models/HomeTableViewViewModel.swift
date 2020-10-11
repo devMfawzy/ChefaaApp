@@ -15,7 +15,7 @@ class HomeTableViewViewModel {
         self.fetchHomePage()
     }
     
-    private func fetchHomePage() {
+    func fetchHomePage() {
         self.homePageSubject.accept(nil)
         self.isFetchingSubject.accept(true)
         self.errorSubject.accept(nil)

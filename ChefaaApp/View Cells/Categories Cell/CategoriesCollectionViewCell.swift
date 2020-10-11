@@ -5,10 +5,10 @@ class CategoriesCollectionViewCell: HomePageItemCell {
     lazy var flowLayout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        let size = CGSize(width: collectionView.frame.width/6, height: collectionView.frame.height/2.2 )
+        let size = CGSize(width: collectionView.frame.width/7, height: collectionView.frame.height/2.1 )
         layout.itemSize = size
-        layout.minimumLineSpacing = 5
-        layout.minimumInteritemSpacing = 5
+        layout.minimumLineSpacing = 8
+        layout.minimumInteritemSpacing = 8
         return layout
     }()
     
